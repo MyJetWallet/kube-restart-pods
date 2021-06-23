@@ -2,6 +2,9 @@
 
 set -e
 
+
+if [ "$NAMESPACE" != "null" ];
+then
 echo "restart in process ..."
 echo $NAMESPACE
 
@@ -15,4 +18,6 @@ echo ${PODS}
 
 kubectl delete pod ${PODS} -n $NAMESPACE
 #kubectl get pods -n $NAMESPACE | grep $POD | cut -d " " -f1 | head -1 | xargs kubectl delete pod -n $NAMESPACE
-
+else
+echo "Restart is DISABLED, namespase is null"
+fi
