@@ -2,8 +2,8 @@ FROM gcr.io/cloud-builders/kubectl
 
 LABEL version="1.0.0"
 LABEL name="kubectl"
-LABEL repository="https://github.com/MyJetWallet/kube-restart-pods"
-LABEL homepage="https://github.com/MyJetWallet/kube-restart-pods"
+LABEL repository="https://github.com/MyJetMarketingBox/devops/kube-restart-pods"
+LABEL homepage="https://github.com/MyJetMarketingBox/devops/kube-restart-pods"
 
 LABEL com.github.actions.name="Kubernetes CLI - kubectl"
 LABEL com.github.actions.description="Runs kubectl. The config can be provided with the secret KUBE_CONFIG_DATA."
